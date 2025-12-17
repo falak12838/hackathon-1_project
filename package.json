@@ -1,0 +1,62 @@
+{
+  "name": "physical-ai-textbook-generator",
+  "version": "1.0.0",
+  "description": "A TypeScript-based system that generates a complete textbook for Physical AI & Humanoid Robotics",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/textbook-generator/cli/textbook-cli.ts",
+    "start": "node dist/textbook-generator/cli/textbook-cli.js",
+    "test": "jest",
+    "textbook:generate": "ts-node src/textbook-generator/cli/textbook-cli.ts generate",
+    "textbook:dev": "docusaurus start",
+    "textbook:build": "docusaurus build",
+    "textbook:serve": "docusaurus serve",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write src",
+    "deploy": "docusaurus deploy",
+    "clear": "docusaurus clear",
+    "swizzle": "docusaurus swizzle",
+    "write-translations": "docusaurus write-translations",
+    "write-heading-ids": "docusaurus write-heading-ids"
+  },
+  "keywords": [
+    "textbook",
+    "generator",
+    "ai",
+    "robotics",
+    "education",
+    "typescript"
+  ],
+  "author": "AI Assistant",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^4.17.25",
+    "@types/helmet": "^0.0.48",
+    "@types/jest": "^29.5.0",
+    "@types/morgan": "^1.9.10",
+    "@types/node": "^20.19.27",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "jest": "^29.5.0",
+    "prettier": "^3.0.0",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@docusaurus/core": "^3.0.0",
+    "@docusaurus/preset-classic": "^3.0.0",
+    "commander": "^11.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-validator": "^6.15.0",
+    "fastapi": "^0.0.2",
+    "helmet": "^7.1.0",
+    "morgan": "^1.10.0",
+    "openai": "^4.0.0",
+    "qdrant-client": "^0.0.1"
+  }
+}

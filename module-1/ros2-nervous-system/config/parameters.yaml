@@ -1,0 +1,18 @@
+# Configuration file for ROS2 Nervous System Package
+
+# Neural pathway parameters
+neural_response_threshold: 0.5
+reflex_delay_ms: 10
+processing_frequency: 100
+
+# Motor control parameters
+max_linear_velocity: 1.0
+max_angular_velocity: 1.5
+
+# Sensor parameters
+sensor_update_rate: 50
+sensor_timeout_ms: 1000
+
+# Safety parameters
+emergency_stop_enabled: true
+max_safety_counter: 10

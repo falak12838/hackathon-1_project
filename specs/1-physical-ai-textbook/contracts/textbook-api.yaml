@@ -1,0 +1,98 @@
+# Textbook Generation API Contract
+
+## Overview
+This API provides endpoints for generating textbooks on Physical AI & Humanoid Robotics with chapters, learning objectives, exercises, and quizzes.
+
+## Base URL
+`/api/textbook`
+
+## Endpoints
+
+### Generate Textbook
+- **POST** `/generate`
+- **Description**: Generate a complete textbook based on the provided configuration
+- **Request Body**:
+```json
+{
+  "config": {
+    "title": "string",
+    "author": "string",
+    "targetAudience": "string",
+    "difficultyLevel": "string",
+    "outputFormats": ["string"],
+    "modules": [
+      {
+        "id": "string",
+        "name": "string",
+        "description": "string",
+        "chapters": [
+          {
+            "id": "string",
+            "name": "string",
+            "content": "string",
+            "order": "number",
+            "learningObjectives": ["string"],
+            "exercises": ["string"],
+            "quizzes": ["string"]
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+- **Response**:
+```json
+{
+  "success": true,
+  "taskId": "string",
+  "outputPath": "string",
+  "formats": ["string"],
+  "estimatedTime": "number"
+}
+```
+- **Status Codes**:
+  - 200: Success
+  - 400: Invalid configuration
+  - 500: Server error
+
+### Get Generation Status
+- **GET** `/status/{taskId}`
+- **Description**: Check the status of a textbook generation task
+- **Path Parameters**:
+  - `taskId`: string - The ID of the generation task
+- **Response**:
+```json
+{
+  "taskId": "string",
+  "status": "pending | processing | completed | failed",
+  "progress": "number",
+  "outputPath": "string",
+  "error": "string | null"
+}
+```
+- **Status Codes**:
+  - 200: Success
+  - 404: Task not found
+
+### Validate Content
+- **POST** `/validate`
+- **Description**: Validate content for coherence and consistency
+- **Request Body**:
+```json
+{
+  "content": "string",
+  "type": "chapter | exercise | quiz | objective"
+}
+```
+- **Response**:
+```json
+{
+  "valid": true,
+  "issues": ["string"],
+  "suggestions": ["string"]
+}
+```
+- **Status Codes**:
+  - 200: Validation complete
+  - 400: Invalid content provided

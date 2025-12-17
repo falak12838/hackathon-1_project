@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install express cors helmet morgan express-validator)",
+      "Bash(npm run build)",
+      "Bash(npm uninstall @types/express-validator)",
+      "Bash(rm -rf frontend_book false)",
+      "Bash(npx jest src/textbook-generator/tests/simple-module.test.ts)",
+      "Bash(tree \"module-1\\ros2-nervous-system\")",
+      "Bash(curl -I http://localhost:5000/physical-ai-textbook-generator/index.html)"
+    ]
+  }
+}

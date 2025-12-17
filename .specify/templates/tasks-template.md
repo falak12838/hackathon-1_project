@@ -25,21 +25,21 @@ description: "Task list template for feature implementation"
 - **Mobile**: `api/src/`, `ios/src/` or `android/src/`
 - Paths shown below assume single project - adjust based on plan.md structure
 
-<!-- 
+<!--
   ============================================================================
   IMPORTANT: The tasks below are SAMPLE TASKS for illustration purposes only.
-  
+
   The /sp.tasks command MUST replace these with actual tasks based on:
   - User stories from spec.md (with their priorities P1, P2, P3...)
   - Feature requirements from plan.md
   - Entities from data-model.md
   - Endpoints from contracts/
-  
+
   Tasks MUST be organized by user story so each story can be:
   - Implemented independently
   - Tested independently
   - Delivered as an MVP increment
-  
+
   DO NOT keep these sample tasks in the generated tasks.md file.
   ============================================================================
 -->
@@ -237,6 +237,20 @@ With multiple developers:
    - Developer B: User Story 2
    - Developer C: User Story 3
 3. Stories complete and integrate independently
+
+### Constitution Compliance Verification
+
+During implementation, verify:
+
+- [ ] Spec-first development: Implementation follows defined specifications without assumptions
+- [ ] Technical accuracy: Implementation uses real APIs and capabilities, not hallucinated ones
+- [ ] Clarity for beginner-intermediate developers: Code and documentation are accessible
+- [ ] Unified, end-to-end system design: Implementation considers entire system architecture
+- [ ] Production-ready, reproducible output: Implementation focuses on production quality
+- [ ] Tooling compliance: Implementation uses specified tools (Spec-Kit Plus, Claude Code, Docusaurus)
+- [ ] Deployment compliance: Implementation supports GitHub Pages deployment
+- [ ] Content standards: Implementation follows modular content structure with runnable examples
+- [ ] Documentation alignment: Implementation aligns with official documentation or standards
 
 ---
 

@@ -1,0 +1,161 @@
+{
+  "id": "sample-textbook-config",
+  "title": "Introduction to Physical AI & Humanoid Robotics",
+  "author": "AI Textbook Generator",
+  "targetAudience": "undergraduate",
+  "difficultyLevel": "intermediate",
+  "modules": [
+    {
+      "id": "introduction-physical-ai",
+      "name": "Introduction to Physical AI",
+      "description": "Basic concepts of Physical AI and its applications in robotics",
+      "chapters": [
+        {
+          "id": "ch-physical-ai-fundamentals",
+          "name": "Physical AI Fundamentals",
+          "content": "# Physical AI Fundamentals\n\nPhysical AI is an interdisciplinary field that combines artificial intelligence with physical systems. This chapter introduces the core concepts, historical context, and applications of Physical AI in robotics.\n\n## Key Concepts\n- Embodied Cognition\n- Sensorimotor Learning\n- Real-world Interaction\n- Adaptive Control Systems\n\n## Applications\nPhysical AI has applications in various domains including humanoid robotics, autonomous vehicles, and smart manufacturing.",
+          "order": 1,
+          "learningObjectives": [
+            {
+              "id": "lo-define-physical-ai",
+              "chapterId": "ch-physical-ai-fundamentals",
+              "description": "Define Physical AI and distinguish it from traditional AI approaches",
+              "measurable": true,
+              "tags": ["definition", "conceptual"]
+            },
+            {
+              "id": "lo-identify-applications",
+              "chapterId": "ch-physical-ai-fundamentals",
+              "description": "Identify key applications of Physical AI in robotics and automation",
+              "measurable": true,
+              "tags": ["application", "domain-knowledge"]
+            }
+          ],
+          "exercises": [
+            {
+              "id": "ex-physical-ai-conceptual",
+              "chapterId": "ch-physical-ai-fundamentals",
+              "title": "Physical AI Conceptual Questions",
+              "description": "Answer the following questions about Physical AI concepts to test your understanding.",
+              "difficulty": "beginner",
+              "solution": "Solutions would include detailed explanations of Physical AI concepts and their applications.",
+              "type": "theoretical"
+            }
+          ],
+          "quizzes": [
+            {
+              "id": "quiz-physical-ai-basics",
+              "chapterId": "ch-physical-ai-fundamentals",
+              "title": "Physical AI Basics Quiz",
+              "questions": [
+                {
+                  "id": "qq-physical-ai-definition",
+                  "quizId": "quiz-physical-ai-basics",
+                  "question": "What distinguishes Physical AI from traditional AI approaches?",
+                  "options": [
+                    "Physical AI operates in real-world environments with physical systems",
+                    "Physical AI uses more sophisticated algorithms",
+                    "Physical AI requires more computational power",
+                    "Physical AI is just a marketing term"
+                  ],
+                  "correctAnswer": "Physical AI operates in real-world environments with physical systems",
+                  "explanation": "Physical AI specifically deals with AI systems that interact with the physical world, as opposed to traditional AI which often operates on abstract data.",
+                  "type": "multiple-choice"
+                }
+              ],
+              "timeLimit": 10
+            }
+          ],
+          "metadata": {
+            "difficultyLevel": "intermediate",
+            "estimatedReadingTime": 15,
+            "keywords": ["Physical AI", "embodied cognition", "robotics"],
+            "prerequisites": []
+          }
+        }
+      ],
+      "order": 1,
+      "prerequisites": []
+    },
+    {
+      "id": "humanoid-robotics-basics",
+      "name": "Humanoid Robotics Basics",
+      "description": "Fundamentals of humanoid robot design, control, and applications",
+      "chapters": [
+        {
+          "id": "ch-humanoid-design-principles",
+          "name": "Humanoid Robot Design Principles",
+          "content": "# Humanoid Robot Design Principles\n\nHumanoid robots are designed to resemble and mimic human behavior. This chapter explores the principles behind their design, mechanical systems, and control mechanisms.\n\n## Key Design Considerations\n- Biomechanical Accuracy\n- Degrees of Freedom\n- Balance and Locomotion\n- Human-Robot Interaction\n\n## Mechanical Systems\nHumanoid robots require sophisticated mechanical systems including actuators, sensors, and structural components that mimic human capabilities.",
+          "order": 2,
+          "learningObjectives": [
+            {
+              "id": "lo-explain-design-principles",
+              "chapterId": "ch-humanoid-design-principles",
+              "description": "Explain the key design principles behind humanoid robots",
+              "measurable": true,
+              "tags": ["design", "principles"]
+            },
+            {
+              "id": "lo-analyze-mechanical-systems",
+              "chapterId": "ch-humanoid-design-principles",
+              "description": "Analyze the mechanical systems required for humanoid robot functionality",
+              "measurable": true,
+              "tags": ["mechanical", "analysis"]
+            }
+          ],
+          "exercises": [
+            {
+              "id": "ex-humanoid-design-analysis",
+              "chapterId": "ch-humanoid-design-principles",
+              "title": "Humanoid Design Analysis",
+              "description": "Analyze the design of a humanoid robot and identify the key components that enable human-like movement.",
+              "difficulty": "intermediate",
+              "solution": "Analysis would include examination of joint configurations, actuator types, sensor placement, and control algorithms.",
+              "type": "practical"
+            }
+          ],
+          "quizzes": [
+            {
+              "id": "quiz-humanoid-basics",
+              "chapterId": "ch-humanoid-design-principles",
+              "title": "Humanoid Robotics Basics Quiz",
+              "questions": [
+                {
+                  "id": "qq-humanoid-definition",
+                  "quizId": "quiz-humanoid-basics",
+                  "question": "What is the primary characteristic that defines a humanoid robot?",
+                  "options": [
+                    "Ability to walk on two legs",
+                    "Human-like appearance and behavior",
+                    "Advanced AI capabilities",
+                    "Humanoid robots are fictional"
+                  ],
+                  "correctAnswer": "Human-like appearance and behavior",
+                  "explanation": "Humanoid robots are defined by their human-like appearance and behavior, including bipedal locomotion and human-like interaction capabilities.",
+                  "type": "multiple-choice"
+                }
+              ],
+              "timeLimit": 10
+            }
+          ],
+          "metadata": {
+            "difficultyLevel": "intermediate",
+            "estimatedReadingTime": 20,
+            "keywords": ["Humanoid", "design", "mechanics"],
+            "prerequisites": ["Physical AI Fundamentals"]
+          }
+        }
+      ],
+      "order": 2,
+      "prerequisites": ["introduction-physical-ai"]
+    }
+  ],
+  "outputFormats": ["html", "markdown"],
+  "customizationOptions": {
+    "includeSolutions": true,
+    "generateQuizzes": true,
+    "addExercises": true,
+    "includeLearningObjectives": true,
+    "estimatedReadingTime": true
+  }
+}

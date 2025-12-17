@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+coverage/
+
+# Environment variables
+.env*
+!.env.example
+
+# Logs
+*.log
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# TypeScript
+*.tsbuildinfo
+*.js
+*.js.map
+
+# Docusaurus
+.docusaurus/
+.cache/
+
+# Testing
+.nyc_output/
+coverage/
+
+# Temporary files
+*.tmp
+*.temp
